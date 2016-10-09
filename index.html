@@ -25,7 +25,7 @@
 					var longitude = position.coords.longitude;
 					$.ajax({
 					  type: 'GET',
-					  url: '/address.php?longitude='+longitude+'&latitude='+latitude,
+					  url: 'address.php?longitude='+longitude+'&latitude='+latitude,
 					  success: function(data) {
 						$("#first_name").val(data)
 					  },
