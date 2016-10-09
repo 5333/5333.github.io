@@ -2,8 +2,8 @@
 $lat=$_REQUEST['latitude'];
 $lon=$_REQUEST['longitude'];
 
-//$lat='46.42987823486328';
-//$lon='30.72199249267578';
+$lat='46.42987823486328';
+$lon='30.72199249267578';
 
 $homepage = file_get_contents('https://geocode-maps.yandex.ru/1.x/?format=json&geocode='.$lon.','.$lat.'');
 $json=json_decode($homepage, true);
