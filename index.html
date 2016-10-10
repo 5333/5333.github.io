@@ -26,9 +26,6 @@
 					$.ajax({
 					  type: 'POST',
 					  url: '/address.php?longitude='+longitude+'&latitude='+latitude,
-					 function(data){
-					 data = JSON.parse(data);
-					 },
 					  success: function(data) {
 						$("#first_name").val(data)
 					  },
